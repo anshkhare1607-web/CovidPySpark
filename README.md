@@ -62,3 +62,38 @@ spark.read.csv()
 inferSchema
 printSchema()
 count()
+
+
+Module 2: Data Cleaning Tasks
+
+Task 2: Handle Missing Province/State Values
+In covid_19_clean_complete.csv:
+Find rows where Province/State is null
+Replace null values with "Unknown"
+Output:
+Country-wise null count report
+Concepts:
+isNull()
+fillna()
+filtering
+
+Task 3: Standardize Country Names
+Check if country names differ across:
+full_grouped
+country_wise_latest
+worldometer_data
+Example:
+US vs USA
+Korea vs South Korea
+Create standardized naming.
+Concepts:
+when()
+regexp_replace()
+cleaning inconsistencies
+
+Task 4: Remove Duplicate Daily Records
+Check if duplicate entries exist for:
+Country + Date
+Remove duplicates.
+Concepts:
+dropDuplicates()
