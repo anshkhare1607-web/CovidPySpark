@@ -132,3 +132,39 @@ Pie chart / stacked bar chart
 Concepts:
 groupBy()
 agg()
+
+
+## Module 4: Time-Series Analysis
+
+#### Task 8: Daily Global New Cases Trend
+Using day_wise.csv
+Find:
+date
+new cases
+Visualization:
+Line chart
+
+#### Task 9: Daily Global Death Growth Trend
+Using day_wise.csv
+Calculate:
+daily death growth percentage
+Formula:
+(new_deaths / previous_day_deaths) * 100
+Concepts:
+window functions
+lag
+Visualization:
+Line chart
+
+
+
+#### Task 10: Monthly COVID Case Growth
+Using full_grouped.csv
+Extract:
+month
+total confirmed cases
+Concepts:
+month()
+groupBy()
+Visualization:
+Monthly trend chart
