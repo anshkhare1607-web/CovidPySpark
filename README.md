@@ -168,3 +168,30 @@ month()
 groupBy()
 Visualization:
 Monthly trend chart
+
+
+## **Module 5** : Window Function Tasks
+
+#### **Task 11** : Top 5 Most Affected Countries Per WHO Region
+Using:
+country_wise_latest.csv
+For each WHO region:
+rank countries based on confirmed cases
+return top 5
+Concepts:
+Window.partitionBy()
+dense_rank()
+Visualization:
+Grouped bar chart
+
+#### **Task 12** : Country-wise Daily Case Increase
+Using full_grouped.csv
+For each country:
+calculate:
+today_confirmed - yesterday_confirmed
+Concepts:
+lag
+partition window
+Visualization:
+Country trend chart
+
