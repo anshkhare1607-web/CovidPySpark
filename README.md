@@ -222,3 +222,21 @@ Find top countries with highest infection rate.
 Visualization:
 Scatter plot / bar chart
 
+## **Module 7** : Geographic Analysis
+#### **Task 15** : USA State-wise Case Distribution
+Using usa_county_wise.csv
+Group by:
+Province_State
+Find number of counties reported per state.
+Visualization:
+US map / bar chart
+
+#### **Task 16**: Latitude-Longitude Based Case Clusters
+Using covid_19_clean_complete.csv
+Create dataset containing:
+latitude
+longitude
+confirmed cases
+Visualization:
+Geo scatter plot
+
