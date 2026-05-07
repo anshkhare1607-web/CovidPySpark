@@ -195,3 +195,30 @@ partition window
 Visualization:
 Country trend chart
 
+
+## **Module 6**: Join Operations
+
+#### **Task 13**: Compare Latest Dataset Sources
+Join:
+country_wise_latest.csv
+worldometer_data.csv
+Join on:
+Country/Region
+Compare:
+Confirmed cases difference
+Death difference
+Recovery difference
+Output:
+Find countries where both datasets show large mismatches.
+Concepts:
+joins
+calculated columns
+
+#### **Task 14**: Population vs Total Cases
+Using worldometer_data.csv
+Calculate:
+infection_rate = (TotalCases / Population) * 100
+Find top countries with highest infection rate.
+Visualization:
+Scatter plot / bar chart
+
