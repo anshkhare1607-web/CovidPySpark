@@ -23,7 +23,7 @@ How did population size impact infection rates?
 Since the data is spread across multiple datasets with different formats and granularity levels, organizations require a robust data pipeline to clean, transform, and analyze this information efficiently.
 This project simulates how a real-world analytics team would process pandemic data for reporting and decision-making.
 
-Tech Stack
+### Tech Stack
 PySpark → Large-scale data processing
 Python → Additional scripting
 Spark SQL → Analytical queries
@@ -40,9 +40,9 @@ worldometer_data.csv → Population and global COVID stats
 
 
    
-Module 1: Data Loading & Schema Handling
+## Module 1: Data Loading & Schema Handling
 
-Task 1: Load all CSV files into PySpark DataFrames
+#### Task 1: Load all CSV files into PySpark DataFrames
 Load:
 full_grouped.csv
 covid_19_clean_complete.csv
@@ -64,9 +64,9 @@ printSchema()
 count()
 
 
-Module 2: Data Cleaning Tasks
+## Module 2: Data Cleaning Tasks
 
-Task 2: Handle Missing Province/State Values
+#### Task 2: Handle Missing Province/State Values
 In covid_19_clean_complete.csv:
 Find rows where Province/State is null
 Replace null values with "Unknown"
@@ -77,7 +77,7 @@ isNull()
 fillna()
 filtering
 
-Task 3: Standardize Country Names
+#### Task 3: Standardize Country Names
 Check if country names differ across:
 full_grouped
 country_wise_latest
@@ -91,9 +91,44 @@ when()
 regexp_replace()
 cleaning inconsistencies
 
-Task 4: Remove Duplicate Daily Records
+#### Task 4: Remove Duplicate Daily Records
 Check if duplicate entries exist for:
 Country + Date
 Remove duplicates.
 Concepts:
 dropDuplicates()
+
+
+## Module 3: Aggregation Tasks
+
+#### Task 5: Top 10 Countries by Total Confirmed Cases
+Using country_wise_latest.csv
+Output:
+| Country | Confirmed |
+Sort descending.
+Visualization:
+Bar chart
+Concepts:
+orderBy()
+limit()
+
+#### Task 6: Top 10 Countries by Death Rate
+Using:
+Deaths / 100 Cases
+Find top countries with highest death rate.
+Visualization:
+Horizontal bar chart
+
+#### Task 7: WHO Region-wise Total Cases
+Using:
+full_grouped.csv
+Find:
+total confirmed
+total deaths
+total recovered
+grouped by WHO region.
+Visualization:
+Pie chart / stacked bar chart
+Concepts:
+groupBy()
+agg()
