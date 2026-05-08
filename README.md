@@ -263,3 +263,17 @@ new cases were maximum
 new deaths were maximum
 Visualization:
 Peak markers on line chart
+
+
+## **Module 9** : Feature Engineering
+#### **Task 20**: Create Severity Category
+Based on confirmed cases:
+Low → < 10K
+Medium → 10K–100K
+High → 100K–1M
+Critical → >1M
+Apply on country dataset.
+Visualization:
+Pie chart
+Concepts:
+when()
