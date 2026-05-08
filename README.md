@@ -240,3 +240,26 @@ confirmed cases
 Visualization:
 Geo scatter plot
 
+
+## **Module 8** : Advanced Analytical Tasks
+#### **Task 17** : Recovery Rate Analysis
+Using country_wise_latest.csv
+Formula:
+(Recovered / Confirmed) * 100
+Find:
+best recovery countries
+worst recovery countries
+Visualization:
+Bar chart
+#### **Task 18** : Active Case Burden Analysis
+Find countries where:
+Active cases > recovered cases
+Output:
+High-risk countries list
+#### **Task 19** : Identify Pandemic Peaks
+Using day_wise.csv
+Find dates where:
+new cases were maximum
+new deaths were maximum
+Visualization:
+Peak markers on line chart
